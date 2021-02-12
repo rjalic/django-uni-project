@@ -1,0 +1,32 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+  <div class="row">
+    {% for movie in movies %}
+      <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-content">
+              <div class="card-title">{{movie.movieName}}</div>
+              <!-- <p>ID: {{movie.id}}</p> -->
+              <p>Duration: {{movie.duration}} minutes</p>
+              <p>Seats Remaining: {{movie.remaining}} seats</p>
+              <p>Price: {{movie.price}} HRK</p>
+              {% if user.is_authenticated %}
+              <br>
+              <form method="POST">
+                {% csrf_token %}
+                <div class="row valign-wrapper">
+                  <input class="col s7" type="number" name="ticket-amount">
+                  <input type="hidden" name="projection-id" value="{{movie.id}}">
+                  <button class="btn col s4" style="margin-left: 10px;" type="submit">Buy</button>
+                </div>
+              </form>
+              {% endif %}
+            </div>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

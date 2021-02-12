@@ -1,0 +1,15 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h5>{{ subject.name }}</h5>
+    <h6><span>Code:</span> {{ subject.code }}</h6>
+    <h6><span>ECTS:</span> {{ subject.ects }}</h6>
+    <h6><span>Semester Full Time:</span> {{ subject.semester_full_time }}</h6>
+    <h6><span>Semester Part Time:</span> {{ subject.semester_part_time }}</h6>
+    <h6><span>Optional:</span> {{ subject.optional }}</h6><br>
+    <a href="{% url 'main:subjects' %}" class="btn">Back to Subjects</a>
+</div>
+
+{% endblock %}

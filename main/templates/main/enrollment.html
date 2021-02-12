@@ -1,0 +1,76 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <h4>{{student.first_name}} {{student.last_name}}</h4>
+    <div class="col">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Available Subjects</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for subject in subjects %}
+          {% if subject.id not in enrolled_subjects %}
+          <tr>
+            <td>
+              <form action="{% url 'main:enroll' %}" method="POST" class="col">
+                {% csrf_token %}
+                <input type="hidden" name="student_id" value={{student.id}}>
+                <input type="hidden" name="subject_id" value={{subject.id}}>
+                <button type="submit" class="btn">Enroll</button>
+              </form>
+              <span class="col">{{subject}}</span>
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col">
+      {% for i in range %}
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Semester #{{forloop.counter}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for enrollment in enrollment_info %}
+          {% if enrollment.subject.semester_full_time == i %}
+            <tr>
+              <td>
+                <div class="col">
+                  {% if enrollment.status == 'passed' %}
+                  <form action="{% url 'main:edit_enrollment' enrollment_id=enrollment.id %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="btn">Edit</button>
+                  </form>
+                  {% else %}
+                  <form action="{% url 'main:edit_enrollment' enrollment_id=enrollment.id %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="btn">Pass</button>
+                  </form>
+                  <form action="{% url 'main:unenroll' enrollment_id=enrollment.id %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="btn">Fail</button>
+                  </form>
+                  {% endif %}
+                </div>
+                <span class="col">{{enrollment.subject}}</span>
+              </td>
+            </tr>
+          {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}

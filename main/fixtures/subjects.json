@@ -1,0 +1,626 @@
+[
+  {
+    "model": "main.Subject",
+    "pk": 1,
+    "fields": {
+      "name": "Linearna algebra",
+      "code": "SIT001",
+      "program": "new",
+      "ects": 6,
+      "semester_full_time": 1,
+      "semester_part_time": 1,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 2,
+    "fields": {
+      "name": "Fizika",
+      "code": "SIT002",
+      "program": "new",
+      "ects": 6,
+      "semester_full_time": 1,
+      "semester_part_time": 3,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 3,
+    "fields": {
+      "name": "Osnove elektrotehnike",
+      "code": "SIT003",
+      "program": "new",
+      "ects": 6,
+      "semester_full_time": 1,
+      "semester_part_time": 1,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 4,
+    "fields": {
+      "name": "Digitalna i mikroprocesorska tehnika",
+      "code": "SIT004",
+      "program": "new",
+      "ects": 7,
+      "semester_full_time": 1,
+      "semester_part_time": 2,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 5,
+    "fields": {
+      "name": "Uporaba racunala",
+      "code": "SIT005",
+      "program": "new",
+      "ects": 4,
+      "semester_full_time": 1,
+      "semester_part_time": 1,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 6,
+    "fields": {
+      "name": "Engleski jezik 1",
+      "code": "SIT006",
+      "program": "new",
+      "ects": 2,
+      "semester_full_time": 1,
+      "semester_part_time": 1,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 7,
+    "fields": {
+      "name": "Analiza 1",
+      "code": "SIT007",
+      "program": "new",
+      "ects": 7,
+      "semester_full_time": 2,
+      "semester_part_time": 2,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 8,
+    "fields": {
+      "name": "Osnove elektronike",
+      "code": "SIT008",
+      "program": "new",
+      "ects": 6,
+      "semester_full_time": 2,
+      "semester_part_time": 2,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 9,
+    "fields": {
+      "name": "Arhitektura i organizacija digitalnih racunala",
+      "code": "SIT009",
+      "program": "new",
+      "ects": 7,
+      "semester_full_time": 2,
+      "semester_part_time": 3,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 10,
+    "fields": {
+      "name": "Uvod u programiranje",
+      "code": "SIT010",
+      "program": "new",
+      "ects": 8,
+      "semester_full_time": 2,
+      "semester_part_time": 3,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 11,
+    "fields": {
+      "name": "Engleski jezik 2",
+      "code": "SIT011",
+      "program": "new",
+      "ects": 2,
+      "semester_full_time": 2,
+      "semester_part_time": 2,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 12,
+    "fields": {
+      "name": "Primijenjena i numericka matematika",
+      "code": "SIT012",
+      "program": "new",
+      "ects": 6,
+      "semester_full_time": 3,
+      "semester_part_time": 4,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 13,
+    "fields": {
+      "name": "Programske metode i apstrakcije",
+      "code": "SIT013",
+      "program": "new",
+      "ects": 8,
+      "semester_full_time": 3,
+      "semester_part_time": 4,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 14,
+    "fields": {
+      "name": "Baze podataka",
+      "code": "SIT014",
+      "program": "new",
+      "ects": 6,
+      "semester_full_time": 3,
+      "semester_part_time": 5,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 15,
+    "fields": {
+      "name": "Informacijski sustavi",
+      "code": "SIT015",
+      "program": "new",
+      "ects": 6,
+      "semester_full_time": 3,
+      "semester_part_time": 4,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 16,
+    "fields": {
+      "name": "Tehnicki Engleski jezik",
+      "code": "SIT016",
+      "program": "new",
+      "ects": 4,
+      "semester_full_time": 3,
+      "semester_part_time": 5,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 17,
+    "fields": {
+      "name": "Racunalne mreze",
+      "code": "SIT017",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 4,
+      "semester_part_time": 5,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 18,
+    "fields": {
+      "name": "Operacijski sustavi",
+      "code": "SIT018",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 4,
+      "semester_part_time": 5,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 19,
+    "fields": {
+      "name": "Strukture podataka i algoritmi",
+      "code": "SIT019",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 4,
+      "semester_part_time": 6,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 20,
+    "fields": {
+      "name": "Objektno programiranje",
+      "code": "SIT020",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 4,
+      "semester_part_time": 6,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 21,
+    "fields": {
+      "name": "Baze podataka 2",
+      "code": "SIT021",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 4,
+      "semester_part_time": 6,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 22,
+    "fields": {
+      "name": "Mrezne usluge i programiranje",
+      "code": "SIT022",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 4,
+      "semester_part_time": 6,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 23,
+    "fields": {
+      "name": "Arhitektura osobnih racunala",
+      "code": "SIT023",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 4,
+      "semester_part_time": 6,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 24,
+    "fields": {
+      "name": "Projektiranje i upravljanje racunalnim mrezama",
+      "code": "SIT024",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 4,
+      "semester_part_time": 6,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 25,
+    "fields": {
+      "name": "Projektiranje informacijskih sustava",
+      "code": "SIT025",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 4,
+      "semester_part_time": 6,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 26,
+    "fields": {
+      "name": "Informatizacija poslovanja",
+      "code": "SIT026",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 4,
+      "semester_part_time": 6,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 27,
+    "fields": {
+      "name": "Ekonomika i organizacija poduzeca",
+      "code": "SIT027",
+      "program": "new",
+      "ects": 2,
+      "semester_full_time": 5,
+      "semester_part_time": 7,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 28,
+    "fields": {
+      "name": "Analiza 2",
+      "code": "SIT028",
+      "program": "new",
+      "ects": 6,
+      "semester_full_time": 5,
+      "semester_part_time": 7,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 29,
+    "fields": {
+      "name": "Industrijska praksa",
+      "code": "SIT029",
+      "program": "new",
+      "ects": 2,
+      "semester_full_time": 5,
+      "semester_part_time": 7,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 30,
+    "fields": {
+      "name": "Arhitektura posluziteljskih racunala",
+      "code": "SIT030",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 5,
+      "semester_part_time": 7,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 31,
+    "fields": {
+      "name": "Sigurnost racunala i podataka",
+      "code": "SIT031",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 5,
+      "semester_part_time": 7,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 32,
+    "fields": {
+      "name": "Programski alati na UNIX racunalima",
+      "code": "SIT032",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 5,
+      "semester_part_time": 7,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 33,
+    "fields": {
+      "name": "Napredno Windows programiranje",
+      "code": "SIT033",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 5,
+      "semester_part_time": 7,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 34,
+    "fields": {
+      "name": "Objektno orijentirano modeliranje",
+      "code": "SIT034",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 5,
+      "semester_part_time": 7,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 35,
+    "fields": {
+      "name": "Programiranje u Javi",
+      "code": "SIT035",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 5,
+      "semester_part_time": 7,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 36,
+    "fields": {
+      "name": "Programiranje na Internetu",
+      "code": "SIT036",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 5,
+      "semester_part_time": 7,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 37,
+    "fields": {
+      "name": "Elektronicko poslovanje",
+      "code": "SIT037",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 5,
+      "semester_part_time": 7,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 38,
+    "fields": {
+      "name": "Diskretna matematika",
+      "code": "SIT038",
+      "program": "new",
+      "ects": 6,
+      "semester_full_time": 6,
+      "semester_part_time": 8,
+      "optional": "No"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 39,
+    "fields": {
+      "name": "Upravljanje posluziteljskim racunalima",
+      "code": "SIT039",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 6,
+      "semester_part_time": 8,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 40,
+    "fields": {
+      "name": "Programiranje u C#",
+      "code": "SIT040",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 6,
+      "semester_part_time": 8,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 41,
+    "fields": {
+      "name": "Drustveni informacijski sustavi",
+      "code": "SIT041",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 6,
+      "semester_part_time": 8,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 42,
+    "fields": {
+      "name": "Oblikovanje Web stranica",
+      "code": "SIT042",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 6,
+      "semester_part_time": 8,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 43,
+    "fields": {
+      "name": "Vodenje projekata i dokumentacija",
+      "code": "SIT043",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 6,
+      "semester_part_time": 8,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 44,
+    "fields": {
+      "name": "Informatizacija proizvodnje",
+      "code": "SIT044",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 6,
+      "semester_part_time": 8,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 45,
+    "fields": {
+      "name": "Analiza i obrada podataka",
+      "code": "SIT045",
+      "program": "new",
+      "ects": 5,
+      "semester_full_time": 6,
+      "semester_part_time": 8,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 46,
+    "fields": {
+      "name": "Njemacki jezik",
+      "code": "SSZP40",
+      "program": "new",
+      "ects": 4,
+      "semester_full_time": 6,
+      "semester_part_time": 8,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 47,
+    "fields": {
+      "name": "Talijanski jezik",
+      "code": "SSZP50",
+      "program": "new",
+      "ects": 4,
+      "semester_full_time": 6,
+      "semester_part_time": 8,
+      "optional": "Yes"
+    }
+  },
+  {
+    "model": "main.Subject",
+    "pk": 48,
+    "fields": {
+      "name": "Zavrsni rad",
+      "code": "SIT046",
+      "program": "new",
+      "ects": 8,
+      "semester_full_time": 6,
+      "semester_part_time": 8,
+      "optional": "No"
+    }
+  }
+]

@@ -1,0 +1,38 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <h4>Subjects</h4>
+    <a href="{% url 'main:add_subject' %}" class="btn">Add Subject</a>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">ECTS</th>
+          <th scope="col">Optional</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for subject in subjects %}
+        <tr>
+          <th scope="row">{{subject.code}}</th>
+          <td>{{subject.name}}</td>
+          <td>{{subject.ects}}</td>
+          <td>{{subject.optional}}</td>
+          <td>
+            <a href="{% url 'main:subject_details' subject.id %}">Details</a>
+            <a href="{% url 'main:edit_subject' subject.id %}">Edit</a>
+            <a href="{% url 'main:remove_subject' subject.id %}">Remove</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

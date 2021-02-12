@@ -1,0 +1,22 @@
+<nav class="teal">
+  <div class="container">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">College</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">{{user.username}}</a></li>
+        {% if user.is_authenticated %}
+          {% if user.role == 'MENTOR' %}
+            <li><a href="/subjects">Subjects</a></li>
+            <li><a href="/students">Students</a></li>
+          {% else %}
+            <li><a href="{% url 'main:enrollment' user.id %}">Enrollment</a></li>
+          {% endif %}
+          <li><a href="/logout">Logout</a></li>
+        {% else %}
+          <li><a href="/register">Register</a></li>
+          <li><a href="/login">Login</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>
